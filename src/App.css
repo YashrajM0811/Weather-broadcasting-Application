@@ -1,38 +1,109 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  min-width: 100vh;
+  padding: 25px;
+  height: 100vh;
+  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+  font-size: 20px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date{
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-box .temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  background-image: url("./assets/Warm-Background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.7;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.weather-box .weather{
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 0px;
+  text-align: center;
+  border-top: 1px solid white;
+}
+
+.footer a{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 18px;
+  text-decoration: none;
 }
